@@ -1,4 +1,5 @@
-[![run custom action](https://github.com/dray-the-sea/next-test/actions/workflows/qa-deploy.yml/badge.svg)(https://github.com/dray-the-sea/next-test/actions/workflows/qa-deploy.yml)]
+
+[![run custom action](https://github.com/dray-the-sea/next-test/actions/workflows/qa-deploy.yml/badge.svg)](https://github.com/dray-the-sea/next-test/actions/workflows/qa-deploy.yml)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
