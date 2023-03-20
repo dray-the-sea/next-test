@@ -2,6 +2,7 @@ name: Custom Action
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  VERCEL_URL: next-vercel-test-qa.vercel.app
   
 on:
   workflow_dispatch
