@@ -1,20 +1,16 @@
-name: QA Deploy
-
+name: GitHub Actions Vercel Preview Deployment
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-
 on:
+
   workflow_dispatch
 
+
 jobs:
-
   Deploy-Preview:
-
     runs-on: ubuntu-latest
-
     steps:
-
       - uses: actions/checkout@v2
       - name: Install Vercel CLI
         run: pnpm i -g vercel
@@ -27,6 +23,5 @@ jobs:
 
       - name: Build Project Artifacts
         run: vercel build --token=${{ secrets.VERCEL_QA_TOKEN }}
-
       - name: Deploy Project Artifacts to Vercel
         run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_QA_TOKEN }}
