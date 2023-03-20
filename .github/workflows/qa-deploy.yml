@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install Vercel CLI
-        run: pnpm i -g vercel
+        run: npm i -g vercel
         
       - name: get version
         run: vercel --version
