@@ -17,7 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
-            I am the preview app... nothing to see here. &nbsp;
+            I am the preview app... nothing to see here. Tied to Preview.&nbsp;
             <code className={styles.code}>src/pages/index.tsx</code>
           </p>
           <div>
