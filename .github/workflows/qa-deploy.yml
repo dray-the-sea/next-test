@@ -15,6 +15,6 @@ jobs:
       uses: enflo/curl-action@master
       with:
         args: |
-          -X PATCH 'https://api.vercel.com/v9/projects/${{ secrets.VERCEL_PROJECT_ID }}/domains/${{ secrets.VERCEL_URL }}?teamId=${{ secrets.VERCEL_ORG_ID }}' \
+          -X PATCH 'https://api.vercel.com/v9/projects/${{ secrets.VERCEL_PROJECT_ID }}/domains/next-vercel-test-qa.vercel.app?teamId=${{ secrets.VERCEL_ORG_ID }}' \
           -H 'Authorization: Bearer ${{ secrets.VERCEL_QA_TOKEN }}' \
           -d '{"gitBranch": "QA", "redirect": "", "redirectStatusCode": ""}'
